@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>knotCollective</title>
+    <title>About — knotCollective</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
@@ -78,6 +78,56 @@
             height: 16px;
         }
 
+        /* About Content */
+        .about-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            max-width: 600px;
+            padding: 0 2rem;
+        }
+
+        .about-title {
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            margin-bottom: 2.5rem;
+        }
+
+        .members {
+            margin-bottom: 2.5rem;
+        }
+
+        .member {
+            margin-bottom: 1.2rem;
+        }
+
+        .member-name {
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .member-role {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.05em;
+        }
+
+        .member .not-performing {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        .about-text {
+            font-size: 0.75rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.65);
+            letter-spacing: 0.03em;
+        }
+
         /* Mobile */
         @media (max-width: 768px) {
             nav {
@@ -96,12 +146,27 @@
             .nav-right {
                 gap: 1rem;
             }
+
+            .about-content {
+                max-width: 90%;
+            }
+
+            .about-title {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .about-text {
+                font-size: 0.7rem;
+                line-height: 1.7;
+            }
         }
     </style>
 </head>
 <body>
     <nav>
         <div class="nav-left">
+            <a href="index.html">Home</a>
             <a href="#projects">Projects</a>
             <a href="#archive">Archive</a>
             <a href="about.html">About</a>
@@ -123,5 +188,32 @@
             </a>
         </div>
     </nav>
+
+    <div class="about-content">
+        <h1 class="about-title">KNOT / iKNOT</h1>
+
+        <div class="members">
+            <div class="member">
+                <div class="member-name">Ettore Biagi</div>
+                <div class="member-role">clarinets, mezmar, spoken poetry</div>
+            </div>
+            <div class="member">
+                <div class="member-name">Tian Fu</div>
+                <div class="member-role">electronics, rap, texts</div>
+            </div>
+            <div class="member">
+                <div class="member-name">Aya Masui</div>
+                <div class="member-role">electronics, snare drum, objects</div>
+            </div>
+            <div class="member">
+                <div class="member-name not-performing">Vlad Ceban (not performing)</div>
+                <div class="member-role not-performing">texts</div>
+            </div>
+        </div>
+
+        <p class="about-text">
+            4 artists working with real-time composition and textuality. The group is composed of a writer, a clarinetist/visual artist/poet, a percussionist/sound artist and a composer/rapper. Our practice is based on instrumental electro-acoustic improvisation, spoken poetry, freestyle Chinese rap, field recordings and sampling. KNOT's performances encompass interrupted reportage and a form of multilingual speculative storytelling, exploring the counterpoint of factual and virtual.
+        </p>
+    </div>
 </body>
 </html>
