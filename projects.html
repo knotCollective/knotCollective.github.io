@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>knotCollective</title>
+    <title>Projects — knotCollective</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
@@ -77,49 +77,11 @@
             height: 16px;
         }
 
-        /* Mobile */
-        @media (max-width: 768px) {
-            nav {
-                padding: 1rem 1.5rem;
-            }
-
-            .nav-left {
-                gap: 1.5rem;
-            }
-
-            .nav-left a {
-                font-size: 0.6rem;
-                letter-spacing: 0.1em;
-            }
-
-            .nav-right {
-                gap: 1rem;
-            }
-
-            .hero img {
-                max-width: 90%;
-            }
-        }
-
-        /* Hero */
-        .hero {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        .hero img {
-            max-width: 600px;
-            width: 100%;
-            display: block;
-        }
-
-        /* Projects */
-        #projects {
-            min-height: 100vh;
+        /* Projects Content */
+        .projects-content {
             padding: 6rem 2rem 4rem;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .project {
@@ -167,11 +129,40 @@
             max-width: 400px;
             width: 100%;
         }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .nav-left {
+                gap: 1.5rem;
+            }
+
+            .nav-left a {
+                font-size: 0.6rem;
+                letter-spacing: 0.1em;
+            }
+
+            .nav-right {
+                gap: 1rem;
+            }
+
+            .project-images {
+                gap: 1rem;
+            }
+
+            .project-images img {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="nav-left">
+            <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="#archive">Archive</a>
             <a href="about.html">About</a>
@@ -193,11 +184,7 @@
         </div>
     </nav>
 
-    <div class="hero">
-        <img src="knot.jpg" alt="KNOT">
-    </div>
-
-    <section id="projects">
+    <div class="projects-content">
         <div class="project">
             <div class="project-info">
                 <h2 class="project-title">REMAININGS #1</h2>
@@ -210,6 +197,6 @@
                 <img src="remainings2.jpg" alt="Remainings #2">
             </div>
         </div>
-    </section>
+    </div>
 </body>
 </html>
