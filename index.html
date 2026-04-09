@@ -15,7 +15,8 @@
         }
 
         html, body {
-            min-height: 100%;
+            height: 100%;
+            overflow: hidden;
         }
 
         body {
@@ -77,6 +78,21 @@
             height: 16px;
         }
 
+        /* Hero */
+        .hero {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .hero img {
+            max-width: 600px;
+            width: 100%;
+            display: block;
+        }
+
         /* Mobile */
         @media (max-width: 768px) {
             nav {
@@ -99,73 +115,6 @@
             .hero img {
                 max-width: 90%;
             }
-        }
-
-        /* Hero */
-        .hero {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        .hero img {
-            max-width: 600px;
-            width: 100%;
-            display: block;
-        }
-
-        /* Projects */
-        #projects {
-            min-height: 100vh;
-            padding: 6rem 2rem 4rem;
-        }
-
-        .project {
-            margin-bottom: 4rem;
-        }
-
-        .project-info {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .project-title {
-            font-size: 0.85rem;
-            font-weight: 400;
-            letter-spacing: 0.15em;
-            margin-bottom: 0.5rem;
-        }
-
-        .project-location {
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.6);
-            margin-bottom: 0.25rem;
-        }
-
-        .project-date {
-            font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.5);
-            letter-spacing: 0.05em;
-        }
-
-        .project-description {
-            font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.5);
-            margin-top: 0.25rem;
-        }
-
-        .project-images {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .project-images img {
-            max-width: 400px;
-            width: 100%;
         }
     </style>
 </head>
@@ -196,20 +145,5 @@
     <div class="hero">
         <img src="knot.jpg" alt="KNOT">
     </div>
-
-    <section id="projects">
-        <div class="project">
-            <div class="project-info">
-                <h2 class="project-title">REMAININGS #1</h2>
-                <p class="project-location">FACTORY Free Art Space in Salzburg</p>
-                <p class="project-date">26. Juli 2025</p>
-                <p class="project-description">40 minuten audio-visuelle Performance</p>
-            </div>
-            <div class="project-images">
-                <img src="remainings1.jpg" alt="Remainings #1">
-                <img src="remainings2.jpg" alt="Remainings #2">
-            </div>
-        </div>
-    </section>
 </body>
 </html>
