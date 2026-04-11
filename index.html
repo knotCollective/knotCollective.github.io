@@ -13,16 +13,15 @@
             padding: 0;
             box-sizing: border-box;
         }
-        html {
-            height: auto;
-            min-height: 100%;
+        html, body {
+            height: 100%;
+            overflow: hidden;
         }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             font-weight: 300;
             background: #000000;
             color: #ffffff;
-            min-height: 100vh;
         }
         nav {
             position: fixed;
@@ -68,26 +67,19 @@
             height: 16px;
         }
         .hero {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 80px;
         }
-        .hero iframe {
-            margin-top: 2rem;
-        }
-        .content-scroll {
-            padding: 4rem 2rem 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 3rem;
-        }
-        .content-scroll img,
-        .content-scroll video {
+        .hero img {
             max-width: 600px;
             width: 100%;
+            display: block;
         }
         @media (max-width: 768px) {
             nav {
@@ -102,6 +94,9 @@
             }
             .nav-right {
                 gap: 1rem;
+            }
+            .hero img {
+                max-width: 90%;
             }
         }
     </style>
@@ -129,10 +124,6 @@
             </a>
         </div>
     </nav>
-    <div class="content-scroll">
-        <img src="/Users/ettorebiagi/Desktop/knot logo.png" alt="Knot Logo">
-        <video src="/Users/ettorebiagi/Desktop/video knot logo.mov" controls></video>
-    </div>
     <div class="hero">
         <img src="portrait 1 screenshot.png" alt="KNOT">
         <h2 style="font-family: 'Courier New', monospace; font-weight: normal; font-size: 0.7rem; letter-spacing: 0.2em; margin-top: 2rem; text-transform: uppercase;">Latest Release</h2>
@@ -140,4 +131,3 @@
     </div>
 </body>
 </html>
-The fix: Changed height: 100% on html to min-height: 100% and added height: auto. Now you can scroll.
