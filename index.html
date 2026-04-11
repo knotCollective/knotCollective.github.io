@@ -13,20 +13,16 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         html, body {
             height: 100%;
             overflow: hidden;
         }
-
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             font-weight: 300;
             background: #000000;
             color: #ffffff;
         }
-
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -39,12 +35,10 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .nav-left {
             display: flex;
             gap: 3rem;
         }
-
         .nav-left a {
             text-decoration: none;
             color: #ffffff;
@@ -53,65 +47,57 @@
             text-transform: uppercase;
             transition: opacity 0.2s;
         }
-
         .nav-left a:hover {
             opacity: 0.5;
         }
-
         .nav-right {
             display: flex;
             gap: 1.5rem;
             align-items: center;
         }
-
         .nav-right a {
             color: #ffffff;
             transition: opacity 0.2s;
         }
-
         .nav-right a:hover {
             opacity: 0.5;
         }
-
         .nav-right svg {
             width: 16px;
             height: 16px;
         }
-
-        /* Hero */
         .hero {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-
         .hero img {
             max-width: 600px;
             width: 100%;
             display: block;
         }
-
-        /* Mobile */
+        .hero iframe {
+            margin-top: 2rem;
+        }
         @media (max-width: 768px) {
             nav {
                 padding: 1rem 1.5rem;
             }
-
             .nav-left {
                 gap: 1.5rem;
             }
-
             .nav-left a {
                 font-size: 0.6rem;
                 letter-spacing: 0.1em;
             }
-
             .nav-right {
                 gap: 1rem;
             }
-
             .hero img {
                 max-width: 90%;
             }
@@ -141,9 +127,9 @@
             </a>
         </div>
     </nav>
-
     <div class="hero">
-        <iframe style="border: 0; width: 700px; height: 820px;" src="https://bandcamp.com/EmbeddedPlayer/album=4177057069/size=large/bgcol=000000/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://knot1.bandcamp.com/album/-">_ | by knot</a></iframe>
+        <img src="portrait 1 screenshot.png" alt="KNOT">
+        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4177057069/size=large/bgcol=000000/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless></iframe>
     </div>
 </body>
 </html>
