@@ -13,18 +13,15 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         html, body {
             min-height: 100%;
         }
-
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             font-weight: 300;
             background: #000000;
             color: #ffffff;
         }
-
         /* Navigation */
         nav {
             position: fixed;
@@ -38,12 +35,10 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .nav-left {
             display: flex;
             gap: 3rem;
         }
-
         .nav-left a {
             text-decoration: none;
             color: #ffffff;
@@ -52,31 +47,25 @@
             text-transform: uppercase;
             transition: opacity 0.2s;
         }
-
         .nav-left a:hover {
             opacity: 0.5;
         }
-
         .nav-right {
             display: flex;
             gap: 1.5rem;
             align-items: center;
         }
-
         .nav-right a {
             color: #ffffff;
             transition: opacity 0.2s;
         }
-
         .nav-right a:hover {
             opacity: 0.5;
         }
-
         .nav-right svg {
             width: 16px;
             height: 16px;
         }
-
         /* About Content */
         .about-content {
             position: absolute;
@@ -87,14 +76,12 @@
             max-width: 600px;
             padding: 0 2rem;
         }
-
         .about-title {
             font-size: 1.2rem;
             font-weight: 400;
             letter-spacing: 0.15em;
             margin-bottom: 1rem;
         }
-
         .about-subtitle {
             font-size: 0.75rem;
             line-height: 1.6;
@@ -102,29 +89,23 @@
             letter-spacing: 0.03em;
             margin-bottom: 2.5rem;
         }
-
         .members {
             margin-bottom: 2.5rem;
         }
-
         .member {
             margin-bottom: 1.2rem;
         }
-
         .member-name {
             font-size: 0.85rem;
             font-weight: 400;
             letter-spacing: 0.05em;
             margin-bottom: 0.25rem;
         }
-
         .member-role {
             font-size: 0.75rem;
             color: rgba(255, 255, 255, 0.5);
             letter-spacing: 0.05em;
         }
-
-
         .about-text {
             font-size: 0.75rem;
             line-height: 1.8;
@@ -133,35 +114,35 @@
             text-align: justify;
             margin-bottom: 1.5rem;
         }
-
+        .about-image {
+            margin-bottom: 2.5rem;
+        }
+        .about-image img {
+            width: 300px;
+            height: auto;
+        }
         /* Mobile */
         @media (max-width: 768px) {
             nav {
                 padding: 1rem 1.5rem;
             }
-
             .nav-left {
                 gap: 1.5rem;
             }
-
             .nav-left a {
                 font-size: 0.6rem;
                 letter-spacing: 0.1em;
             }
-
             .nav-right {
                 gap: 1rem;
             }
-
             .about-content {
                 max-width: 90%;
             }
-
             .about-title {
                 font-size: 1rem;
                 margin-bottom: 2rem;
             }
-
             .about-text {
                 font-size: 0.7rem;
                 line-height: 1.7;
@@ -193,12 +174,12 @@
             </a>
         </div>
     </nav>
-
     <div class="about-content">
-        <img src="betoniera occhio.png">
         <h1 class="about-title">KNOT</h1>
         <p class="about-subtitle">KNOT is a collective of 4 artists working with real-time composition and textuality.</p>
-
+        <div class="about-image">
+            <img src="betoniera occhio.png" alt="Knot collective">
+        </div>
         <div class="members">
             <div class="member">
                 <div class="member-name">Ettore Biagi</div>
@@ -217,14 +198,11 @@
                 <div class="member-role">storyteller</div>
             </div>
         </div>
-
         <p class="about-text">
             Knot is composed of a writer, a clarinetist/visual artist/poet, a percussionist/sound artist and a composer/rapper. Our practice is based on instrumental electro-acoustic improvisation, spoken poetry, freestyle rap, field recordings and sampling. knot's performances encompass interrupted reportage and a form of multilingual speculative storytelling, exploring the counterpoint of factual and virtual.
         </p>
-
         <p class="about-text">
             The continuous releases are sonic documentaries from our sessions, tracing the process of mutation that our setup and tools undergo. Around a single table in a small studio, where computers, mixers, speakers, cables, half-built instruments, objects and bodies become sonically merged, we like to get lost in a rhizome of our own doing.
         </p>
     </div>
 </body>
-</html>
